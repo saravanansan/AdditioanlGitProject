@@ -52,7 +52,7 @@ extension iOS_CL_Cus_ActivateContainerVM: ActivateContainerVM_InputDelegate{
 			}
 			
 			guard let result else{
-				self.output?.errorMessage(error: "Something went wrong!")
+				self.output?.errorMessage(error: "Everything is wrong")
 				return
 			}
 			
