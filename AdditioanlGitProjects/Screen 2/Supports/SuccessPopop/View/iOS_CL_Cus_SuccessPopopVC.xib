@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="iOS_CL_Cus_SuccessPopopVC" customModule="ClubLink_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="backbtn" destination="y4x-Ho-U4c" id="Fm2-aR-R5q"/>
+                <outlet property="messageLbl" destination="554-hC-kXO" id="4KV-KS-MB6"/>
+                <outlet property="successAnimationView" destination="Dnh-O0-9Na" id="Fgp-IM-gSP"/>
+                <outlet property="successLbl" destination="ONx-tj-dfr" id="nm6-cj-CYn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xi4-a9-6iR">
+                    <rect key="frame" x="40" y="79" width="313" height="679"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="Dnh-O0-9Na" customClass="LottieAnimationView" customModule="Lottie">
+                            <rect key="frame" x="0.0" y="0.0" width="313" height="495.33333333333331"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="3js-Qa-vCh">
+                            <rect key="frame" x="0.0" y="495.33333333333343" width="313" height="183.66666666666669"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Success!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONx-tj-dfr">
+                                    <rect key="frame" x="0.0" y="0.0" width="313" height="45.666666666666664"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="38"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your query has been successfully submitted" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="554-hC-kXO">
+                                    <rect key="frame" x="0.0" y="70.666666666666629" width="313" height="48"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y4x-Ho-U4c" customClass="GradientButton" customModule="ClubLink_iOS" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="143.66666666666663" width="313" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="vtE-xR-AJY"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="13"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Back to dashboard">
+                                        <color key="titleColor" name="blackColor"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                            <color key="value" name="gradient_yellow_1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                            <color key="value" name="gradient_yellow_2"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="didSelectBackToashboard:" destination="-1" eventType="touchUpInside" id="3n7-am-Wej"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="blackColor"/>
+            <constraints>
+                <constraint firstItem="xi4-a9-6iR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="5tZ-iS-IyV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xi4-a9-6iR" secondAttribute="bottom" constant="60" id="A5e-YU-383"/>
+                <constraint firstItem="xi4-a9-6iR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="DQe-7X-vTS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xi4-a9-6iR" secondAttribute="trailing" constant="40" id="UnU-7r-9n6"/>
+            </constraints>
+            <point key="canvasLocation" x="-599" y="-57"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Dnh-O0-9Na"/>
+        <designable name="y4x-Ho-U4c">
+            <size key="intrinsicContentSize" width="127" height="28"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="blackColor">
+            <color red="0.086000002920627594" green="0.086000002920627594" blue="0.086000002920627594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gradient_yellow_1">
+            <color red="0.96100002527236938" green="0.81199997663497925" blue="0.28600001335144043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gradient_yellow_2">
+            <color red="0.87099999189376831" green="0.63899999856948853" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

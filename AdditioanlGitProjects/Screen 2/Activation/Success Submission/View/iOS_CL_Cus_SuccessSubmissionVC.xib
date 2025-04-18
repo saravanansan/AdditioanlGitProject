@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="iOS_CL_Cus_SuccessSubmissionVC" customModule="ClubLink_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="bgView" destination="fCI-S6-KCJ" id="kh7-tO-vT7"/>
+                <outlet property="msgLbl" destination="zdq-gb-kX9" id="1cf-24-Bju"/>
+                <outlet property="proceedBtn" destination="11k-QL-JNy" id="OwS-ho-dU7"/>
+                <outlet property="successImage" destination="Lbo-Se-wKH" id="z9X-DL-lAN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fCI-S6-KCJ" customClass="UIViewDesignable" customModule="ClubLink_iOS" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="494" width="393" height="358"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yua-Hl-MK6">
+                            <rect key="frame" x="30" y="30" width="333" height="294"/>
+                            <subviews>
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mq1-ab-5dR" customClass="UIViewDesignable" customModule="ClubLink_iOS" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="333" height="110"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 7031" translatesAutoresizingMaskIntoConstraints="NO" id="i3Z-ra-1Em">
+                                            <rect key="frame" x="0.0" y="0.0" width="333" height="110"/>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="success" translatesAutoresizingMaskIntoConstraints="NO" id="Lbo-Se-wKH">
+                                            <rect key="frame" x="0.0" y="25" width="333" height="60"/>
+                                            <color key="tintColor" red="1" green="0.1647058824" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Lbo-Se-wKH" secondAttribute="bottom" constant="25" id="Fuq-N7-Fx0"/>
+                                        <constraint firstItem="i3Z-ra-1Em" firstAttribute="leading" secondItem="mq1-ab-5dR" secondAttribute="leading" id="Igm-IU-R07"/>
+                                        <constraint firstItem="i3Z-ra-1Em" firstAttribute="top" secondItem="mq1-ab-5dR" secondAttribute="top" id="OpB-aa-Ke4"/>
+                                        <constraint firstAttribute="trailing" secondItem="i3Z-ra-1Em" secondAttribute="trailing" id="Sex-p8-QQy"/>
+                                        <constraint firstAttribute="bottom" secondItem="i3Z-ra-1Em" secondAttribute="bottom" id="h3E-QH-N71"/>
+                                        <constraint firstAttribute="height" constant="110" id="iNo-pu-xQG"/>
+                                        <constraint firstItem="Lbo-Se-wKH" firstAttribute="top" secondItem="mq1-ab-5dR" secondAttribute="top" constant="25" id="kMd-qK-Ksh"/>
+                                        <constraint firstAttribute="trailing" secondItem="Lbo-Se-wKH" secondAttribute="trailing" id="q42-Us-jCT"/>
+                                        <constraint firstItem="Lbo-Se-wKH" firstAttribute="leading" secondItem="mq1-ab-5dR" secondAttribute="leading" id="qbN-FC-C4H"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Success!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73p-aN-Asp" userLabel="title">
+                                    <rect key="frame" x="0.0" y="130" width="333" height="31.333333333333343"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Personal details saved successfully" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdq-gb-kX9">
+                                    <rect key="frame" x="0.0" y="181.33333333333337" width="333" height="52.666666666666657"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11k-QL-JNy" customClass="GradientButton" customModule="ClubLink_iOS" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="254" width="333" height="40"/>
+                                    <color key="backgroundColor" name="gradient_yellow_1"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="es3-6t-Aqg"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Proceed">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                            <color key="value" name="gradient_yellow_1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                            <color key="value" name="gradient_yellow_2"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="didTappedOkBtn:" destination="-1" eventType="touchUpInside" id="ttq-46-onG"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="Light_Gray"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="yua-Hl-MK6" secondAttribute="trailing" constant="30" id="0L3-Tn-63T"/>
+                        <constraint firstItem="yua-Hl-MK6" firstAttribute="leading" secondItem="fCI-S6-KCJ" secondAttribute="leading" constant="30" id="dGM-iT-JUn"/>
+                        <constraint firstItem="yua-Hl-MK6" firstAttribute="top" secondItem="fCI-S6-KCJ" secondAttribute="top" constant="30" id="hiX-aQ-m66"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                            <real key="value" value="0.40000000000000002"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="0.0" height="-4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" name="gradient_yellow_1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="Light_Gray"/>
+            <constraints>
+                <constraint firstItem="fCI-S6-KCJ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="JGe-vz-Ubg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="yua-Hl-MK6" secondAttribute="bottom" id="uez-Y5-zJn"/>
+                <constraint firstItem="fCI-S6-KCJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="vpz-w7-oYp"/>
+                <constraint firstAttribute="bottom" secondItem="fCI-S6-KCJ" secondAttribute="bottom" id="wLQ-JP-oaz"/>
+            </constraints>
+            <point key="canvasLocation" x="-19" y="-12"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="11k-QL-JNy">
+            <size key="intrinsicContentSize" width="69" height="32"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Rectangle 7031" width="552" height="140"/>
+        <image name="success" width="108.66666412353516" height="106.33333587646484"/>
+        <namedColor name="Light_Gray">
+            <color red="0.20800000429153442" green="0.20800000429153442" blue="0.20800000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gradient_yellow_1">
+            <color red="0.96100002527236938" green="0.81199997663497925" blue="0.28600001335144043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gradient_yellow_2">
+            <color red="0.87099999189376831" green="0.63899999856948853" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

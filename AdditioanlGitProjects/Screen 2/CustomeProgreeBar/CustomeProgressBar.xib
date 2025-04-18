@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomeProgressBar" customModule="ClubLink_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="pointsLbl" destination="9Ye-Fr-9eb" id="9M0-jt-1ZL"/>
+                <outlet property="pointsValueSV" destination="Pdt-Fc-kcP" id="m9v-fl-oJ3"/>
+                <outlet property="pointsValueSVTopConstraints" destination="GBx-94-MNQ" id="8tG-Dq-u2Z"/>
+                <outlet property="progressBarContainer" destination="dqW-XN-IzX" id="wi7-EL-bma"/>
+                <outlet property="progressCircleImage" destination="LRA-Cv-EMh" id="kBv-0s-vto"/>
+                <outlet property="progressCircleView" destination="cmt-Xk-aTQ" id="L0h-7b-H3w"/>
+                <outlet property="progressCircleViewHeightConstraints" destination="PTT-lt-0Ia" id="iND-H8-Yux"/>
+                <outlet property="progressView" destination="ydh-UN-ddf" id="Xbb-n3-AmK"/>
+                <outlet property="progressViewWidthConstraints" destination="fQJ-AF-cXk" id="yDY-DQ-lKp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="103"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqW-XN-IzX" customClass="UIViewDesignable" customModule="ClubLink_iOS" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="59" width="391" height="10"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TyX-Sp-cSk">
+                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="10"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="ydh-UN-ddf" customClass="UIViewDesignable" customModule="ClubLink_iOS" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="10"/>
+                                    <color key="backgroundColor" name="gradient_yellow_1"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" id="fQJ-AF-cXk"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.20784313730000001" green="0.20784313730000001" blue="0.20784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="TyX-Sp-cSk" secondAttribute="trailing" priority="999" id="MRk-dP-Cf2"/>
+                        <constraint firstAttribute="bottom" secondItem="TyX-Sp-cSk" secondAttribute="bottom" id="ROG-ZE-OKD"/>
+                        <constraint firstItem="TyX-Sp-cSk" firstAttribute="leading" secondItem="dqW-XN-IzX" secondAttribute="leading" id="ZJx-Ix-mb4"/>
+                        <constraint firstItem="TyX-Sp-cSk" firstAttribute="top" secondItem="dqW-XN-IzX" secondAttribute="top" id="bG8-D7-yxG"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cmt-Xk-aTQ" customClass="GradientView" customModule="ClubLink_iOS" customModuleProvider="target">
+                    <rect key="frame" x="-8" y="56" width="16" height="16"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 5558" translatesAutoresizingMaskIntoConstraints="NO" id="LRA-Cv-EMh">
+                            <rect key="frame" x="3" y="3" width="10" height="10"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" name="gradient_yellow_1"/>
+                    <constraints>
+                        <constraint firstItem="LRA-Cv-EMh" firstAttribute="leading" secondItem="cmt-Xk-aTQ" secondAttribute="leading" constant="3" id="7ix-jh-Wv5"/>
+                        <constraint firstAttribute="height" constant="16" id="PTT-lt-0Ia"/>
+                        <constraint firstAttribute="width" secondItem="cmt-Xk-aTQ" secondAttribute="height" multiplier="1:1" id="Psw-q8-i0E"/>
+                        <constraint firstAttribute="bottom" secondItem="LRA-Cv-EMh" secondAttribute="bottom" constant="3" id="Tax-jz-4VJ"/>
+                        <constraint firstItem="LRA-Cv-EMh" firstAttribute="top" secondItem="cmt-Xk-aTQ" secondAttribute="top" constant="3" id="d57-6G-dYZ"/>
+                        <constraint firstAttribute="trailing" secondItem="LRA-Cv-EMh" secondAttribute="trailing" constant="3" id="umo-df-Ema"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                            <color key="value" name="gradient_yellow_1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                            <color key="value" name="gradient_yellow_2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pdt-Fc-kcP">
+                    <rect key="frame" x="-4" y="77" width="32" height="27"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Polygon 1" translatesAutoresizingMaskIntoConstraints="NO" id="1pQ-3l-UpZ">
+                            <rect key="frame" x="-1" y="0.0" width="10" height="10"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="10" id="YZ4-TM-ios"/>
+                                <constraint firstAttribute="height" constant="10" id="f6q-Fe-13o"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ye-Fr-9eb">
+                            <rect key="frame" x="0.0" y="15" width="32" height="12"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                            <color key="textColor" name="gradient_yellow_1"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="9Ye-Fr-9eb" secondAttribute="bottom" id="6wK-KQ-xND"/>
+                        <constraint firstItem="1pQ-3l-UpZ" firstAttribute="top" secondItem="Pdt-Fc-kcP" secondAttribute="top" id="PbT-DI-69f"/>
+                        <constraint firstItem="9Ye-Fr-9eb" firstAttribute="leading" secondItem="Pdt-Fc-kcP" secondAttribute="leading" id="TS1-k0-Jhb"/>
+                        <constraint firstAttribute="trailing" secondItem="9Ye-Fr-9eb" secondAttribute="trailing" id="caX-ZT-sMR"/>
+                        <constraint firstItem="9Ye-Fr-9eb" firstAttribute="centerX" secondItem="1pQ-3l-UpZ" secondAttribute="centerX" priority="750" id="pkY-gQ-kje"/>
+                        <constraint firstItem="9Ye-Fr-9eb" firstAttribute="top" secondItem="1pQ-3l-UpZ" secondAttribute="bottom" constant="5" id="tj6-as-TLy"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Pdt-Fc-kcP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-4" id="3PH-Ca-8kx"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Pdt-Fc-kcP" secondAttribute="trailing" constant="4" id="9VI-wz-HzA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="dqW-XN-IzX" secondAttribute="bottom" id="9v0-Jj-2dH"/>
+                <constraint firstItem="Pdt-Fc-kcP" firstAttribute="top" secondItem="dqW-XN-IzX" secondAttribute="bottom" constant="8" id="GBx-94-MNQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="dqW-XN-IzX" secondAttribute="trailing" id="JRj-hf-ijJ"/>
+                <constraint firstItem="dqW-XN-IzX" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="RFy-D8-rhu"/>
+                <constraint firstItem="1pQ-3l-UpZ" firstAttribute="trailing" secondItem="TyX-Sp-cSk" secondAttribute="trailing" priority="999" constant="5" id="YsZ-PY-yrg"/>
+                <constraint firstItem="dqW-XN-IzX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gOa-Fw-nTa"/>
+                <constraint firstItem="cmt-Xk-aTQ" firstAttribute="trailing" secondItem="TyX-Sp-cSk" secondAttribute="trailing" constant="8" id="tOE-Oc-7Ae"/>
+                <constraint firstItem="cmt-Xk-aTQ" firstAttribute="centerY" secondItem="TyX-Sp-cSk" secondAttribute="centerY" id="zwh-Wc-ko3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-361.06870229007632" y="-236.26760563380282"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Group 5558" width="64" height="55"/>
+        <image name="Polygon 1" width="12" height="12"/>
+        <namedColor name="gradient_yellow_1">
+            <color red="0.96078431372549022" green="0.81176470588235294" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gradient_yellow_2">
+            <color red="0.87099999189376831" green="0.63899999856948853" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

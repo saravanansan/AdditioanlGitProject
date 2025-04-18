@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="iOS_CL_Cus_SelectBrandCVC" customModule="ClubLink_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="224" height="194"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="224" height="194"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uW5-0R-0PC">
+                        <rect key="frame" x="0.0" y="0.0" width="224" height="194"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="9zn-QS-fnX" customClass="UIImageDesignable" customModule="ClubLink_iOS" customModuleProvider="target">
+                                <rect key="frame" x="8" y="8" width="208" height="127"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NlQ-Zu-sqI">
+                                <rect key="frame" x="8" y="143" width="208" height="1"/>
+                                <color key="backgroundColor" red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="0.24150853578736181" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="KGy-bV-BFz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXXXXXXXXX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h41-5d-4ng">
+                                <rect key="frame" x="8" y="159" width="208" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Dkp-Ps-c26"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9zn-QS-fnX" firstAttribute="leading" secondItem="uW5-0R-0PC" secondAttribute="leading" constant="8" id="98y-4J-BdZ"/>
+                            <constraint firstItem="9zn-QS-fnX" firstAttribute="top" secondItem="uW5-0R-0PC" secondAttribute="top" constant="8" id="GH8-FJ-WvE"/>
+                            <constraint firstItem="NlQ-Zu-sqI" firstAttribute="top" secondItem="9zn-QS-fnX" secondAttribute="bottom" constant="8" id="KAu-o8-YpK"/>
+                            <constraint firstAttribute="trailing" secondItem="9zn-QS-fnX" secondAttribute="trailing" constant="8" id="NAz-X0-GRQ"/>
+                            <constraint firstAttribute="bottom" secondItem="h41-5d-4ng" secondAttribute="bottom" constant="15" id="RU2-nV-Kbo"/>
+                            <constraint firstAttribute="trailing" secondItem="h41-5d-4ng" secondAttribute="trailing" constant="8" id="S3e-lD-EvH"/>
+                            <constraint firstItem="h41-5d-4ng" firstAttribute="leading" secondItem="uW5-0R-0PC" secondAttribute="leading" constant="8" id="UQf-aE-DKO"/>
+                            <constraint firstItem="h41-5d-4ng" firstAttribute="top" secondItem="NlQ-Zu-sqI" secondAttribute="bottom" constant="15" id="WmZ-uo-Kcl"/>
+                            <constraint firstAttribute="trailing" secondItem="NlQ-Zu-sqI" secondAttribute="trailing" constant="8" id="lxQ-Ns-Ayz"/>
+                            <constraint firstItem="NlQ-Zu-sqI" firstAttribute="leading" secondItem="uW5-0R-0PC" secondAttribute="leading" constant="8" id="qT6-Gx-pFh"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="uW5-0R-0PC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ZRI-ls-7Ab"/>
+                <constraint firstAttribute="trailing" secondItem="uW5-0R-0PC" secondAttribute="trailing" id="iyX-MG-KKm"/>
+                <constraint firstItem="uW5-0R-0PC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="jCT-s7-pxO"/>
+                <constraint firstAttribute="bottom" secondItem="uW5-0R-0PC" secondAttribute="bottom" id="xvF-sz-3IA"/>
+            </constraints>
+            <size key="customSize" width="224" height="194"/>
+            <connections>
+                <outlet property="brandImage" destination="9zn-QS-fnX" id="wDf-YG-ItM"/>
+                <outlet property="brandNameLbl" destination="h41-5d-4ng" id="zCH-gi-WHe"/>
+            </connections>
+            <point key="canvasLocation" x="137.40458015267174" y="70.422535211267615"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="9zn-QS-fnX">
+            <size key="intrinsicContentSize" width="568" height="384"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Logo" width="568" height="384"/>
+    </resources>
+</document>

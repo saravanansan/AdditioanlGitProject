@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="408.384" height="411.036" viewBox="0 0 408.384 411.036">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_6908" data-name="Path 6908" d="M155.327,53.461h26.4V138.58c.153,6.6.165,13.412,0,20.378v.212c-.825,34.674-6.046,73.179-20.6,107.818a.089.089,0,0,0-.024.047c-15.11,43.75-50.185,86.839-100.087,117.058a262.776,262.776,0,0,1-50.6,23.784h-.012A49.393,49.393,0,0,1,1.3,410.812a.267.267,0,0,1-.047.012c-.46.094-.872.165-1.249.212H408.384a32.962,32.962,0,0,1-4.408-1c-.495-.153-1.025-.318-1.591-.507A260.827,260.827,0,0,1,345.871,383.8c-56.078-33.967-93.439-84.2-104.766-133.323-9.924-30.078-13.742-62.065-14.438-91.306a2.462,2.462,0,0,1-.012-.295c-.165-6.954-.141-13.742,0-20.319V53.461h26.412L204.192,0,155.327,53.461Z" transform="translate(0)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f7d24a"/>
+      <stop offset="1" stop-color="#dea342"/>
+    </linearGradient>
+  </defs>
+  <g id="llinc_escaspe" data-name="llinc escaspe" transform="translate(6.644 -90)">
+    <g id="Layer_1-2" transform="translate(-6.644 90)">
+      <g id="Group_7850" data-name="Group 7850" clip-path="url(#clip-path)">
+        <rect id="Rectangle_3653" data-name="Rectangle 3653" width="408.384" height="411.036" transform="translate(0)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="iOS_CL_Cus_GoBackConfirmationPopopVC" customModule="ClubLink_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="errorImage" destination="fGH-P4-h7F" id="kSt-Fa-raG"/>
+                <outlet property="errorImageView" destination="DEf-pX-ubK" id="5eY-N1-nwP"/>
+                <outlet property="messageLbl" destination="geR-Ow-JuY" id="X8z-qP-iVC"/>
+                <outlet property="noBtn" destination="N38-8y-aLg" id="KyR-Y1-MlZ"/>
+                <outlet property="popopView" destination="XI5-S9-rAz" id="0dP-Gd-ea6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="yesBtn" destination="nF5-PF-ehT" id="OGd-bA-Fbo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XI5-S9-rAz" customClass="UIViewDesignable" customModule="ClubLink_iOS" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="538.33333333333337" width="393" height="313.66666666666663"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="kQM-lB-d5z">
+                            <rect key="frame" x="30" y="34.999999999999986" width="333" height="234.66666666666663"/>
+                            <subviews>
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DEf-pX-ubK" customClass="UIViewDesignable" customModule="ClubLink_iOS" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="333" height="100"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle 7031" translatesAutoresizingMaskIntoConstraints="NO" id="zNp-29-n7F">
+                                            <rect key="frame" x="0.0" y="0.0" width="333" height="100"/>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exclamationmark.triangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fGH-P4-h7F">
+                                            <rect key="frame" x="0.0" y="21.333333333333336" width="333" height="57.666666666666664"/>
+                                            <color key="tintColor" name="gradient_yellow_1"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="zNp-29-n7F" firstAttribute="top" secondItem="DEf-pX-ubK" secondAttribute="top" id="6GF-t5-bqR"/>
+                                        <constraint firstItem="zNp-29-n7F" firstAttribute="leading" secondItem="DEf-pX-ubK" secondAttribute="leading" id="DBP-kQ-nGi"/>
+                                        <constraint firstAttribute="trailing" secondItem="fGH-P4-h7F" secondAttribute="trailing" id="LH5-Up-asn"/>
+                                        <constraint firstAttribute="bottom" secondItem="fGH-P4-h7F" secondAttribute="bottom" constant="20" id="T92-zP-PsR"/>
+                                        <constraint firstItem="fGH-P4-h7F" firstAttribute="leading" secondItem="DEf-pX-ubK" secondAttribute="leading" id="Uks-ta-3db"/>
+                                        <constraint firstAttribute="height" constant="100" id="YZY-04-7QW"/>
+                                        <constraint firstItem="fGH-P4-h7F" firstAttribute="top" secondItem="DEf-pX-ubK" secondAttribute="top" constant="20" id="Z9y-rt-0cA"/>
+                                        <constraint firstAttribute="bottom" secondItem="zNp-29-n7F" secondAttribute="bottom" id="geu-j2-dj7"/>
+                                        <constraint firstAttribute="trailing" secondItem="zNp-29-n7F" secondAttribute="trailing" id="n17-hc-yFC"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure you want to go back? Details will not be saved!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geR-Ow-JuY">
+                                    <rect key="frame" x="0.0" y="130" width="333" height="36.666666666666657"/>
+                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="acE-vn-590">
+                                    <rect key="frame" x="0.0" y="196.66666666666663" width="333" height="38"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nF5-PF-ehT" customClass="UIButtonDesignable" customModule="ClubLink_iOS" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="159" height="38"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="38" id="G8L-gh-VIl"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="15"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Yes! Go Back">
+                                                <color key="titleColor" name="gradient_yellow_1"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" name="gradient_yellow_1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="didSelectYesBtn:" destination="-1" eventType="touchUpInside" id="pIQ-9y-Oex"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N38-8y-aLg" customClass="GradientButton" customModule="ClubLink_iOS" customModuleProvider="target">
+                                            <rect key="frame" x="174" y="0.0" width="159" height="38"/>
+                                            <color key="backgroundColor" name="gradient_yellow_1"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="38" id="bKn-T5-n43"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="15"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="No, Stay here">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="8"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" name="gradient_yellow_1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                    <color key="value" name="gradient_yellow_1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                    <color key="value" name="gradient_yellow_2"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="didSelectNoBtn:" destination="-1" eventType="touchUpInside" id="ZUP-Xg-0xZ"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="Light_Gray"/>
+                    <constraints>
+                        <constraint firstItem="kQM-lB-d5z" firstAttribute="top" secondItem="XI5-S9-rAz" secondAttribute="top" constant="35" id="2I6-rH-bMb"/>
+                        <constraint firstItem="kQM-lB-d5z" firstAttribute="leading" secondItem="XI5-S9-rAz" secondAttribute="leading" constant="30" id="dwY-Ua-BAK"/>
+                        <constraint firstAttribute="trailing" secondItem="kQM-lB-d5z" secondAttribute="trailing" constant="30" id="iW0-5v-2Iy"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="blackColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="XI5-S9-rAz" secondAttribute="trailing" id="Kfo-4J-Tnj"/>
+                <constraint firstItem="XI5-S9-rAz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PGV-LM-Wc4"/>
+                <constraint firstAttribute="bottom" secondItem="XI5-S9-rAz" secondAttribute="bottom" id="h3R-Rf-0T3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kQM-lB-d5z" secondAttribute="bottom" constant="10" id="lpd-X5-ENh"/>
+            </constraints>
+            <point key="canvasLocation" x="-42" y="20"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="N38-8y-aLg">
+            <size key="intrinsicContentSize" width="101" height="31"/>
+        </designable>
+        <designable name="nF5-PF-ehT">
+            <size key="intrinsicContentSize" width="97" height="31"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Rectangle 7031" width="552" height="140"/>
+        <image name="exclamationmark.triangle.fill" catalog="system" width="128" height="109"/>
+        <namedColor name="Light_Gray">
+            <color red="0.20800000429153442" green="0.20800000429153442" blue="0.20800000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="blackColor">
+            <color red="0.086000002920627594" green="0.086000002920627594" blue="0.086000002920627594" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gradient_yellow_1">
+            <color red="0.96100002527236938" green="0.81199997663497925" blue="0.28600001335144043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gradient_yellow_2">
+            <color red="0.87099999189376831" green="0.63899999856948853" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
